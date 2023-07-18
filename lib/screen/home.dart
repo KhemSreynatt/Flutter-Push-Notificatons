@@ -11,7 +11,7 @@ class PushNotification extends StatelessWidget {
       ),
       body: ElevatedButton(
         onPressed: () {},
-        child: const Text("Push Notificaton"),
+        child: const Text("Screen Notificaton"),
       ),
     );
   }
