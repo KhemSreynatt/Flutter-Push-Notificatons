@@ -66,8 +66,9 @@ class DefaultFirebaseOptions {
     messagingSenderId: '518287074406',
     projectId: 'push-notificaton-d9134',
     storageBucket: 'push-notificaton-d9134.appspot.com',
-    iosClientId: '518287074406-agpq7mofqt0vuar362ikue0mt8m2fpgj.apps.googleusercontent.com',
-    iosBundleId: 'com.example.pushNotifications',
+    iosClientId:
+        '518287074406-agpq7mofqt0vuar362ikue0mt8m2fpgj.apps.googleusercontent.com',
+    iosBundleId: 'com.example.ccfApp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
@@ -76,7 +77,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '518287074406',
     projectId: 'push-notificaton-d9134',
     storageBucket: 'push-notificaton-d9134.appspot.com',
-    iosClientId: '518287074406-agpq7mofqt0vuar362ikue0mt8m2fpgj.apps.googleusercontent.com',
-    iosBundleId: 'com.example.pushNotifications',
+    iosClientId:
+        '518287074406-agpq7mofqt0vuar362ikue0mt8m2fpgj.apps.googleusercontent.com',
+    iosBundleId: 'com.example.ccfApp',
   );
 }

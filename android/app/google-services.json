@@ -34,7 +34,7 @@
               "client_id": "518287074406-agpq7mofqt0vuar362ikue0mt8m2fpgj.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.pushNotifications",
+                "bundle_id": "com.example.ccfApp",
                 "app_store_id": "1234567890"
               }
             }
