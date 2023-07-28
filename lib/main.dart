@@ -42,8 +42,11 @@ void main() async {
           debugPrint(
               'Message notification title: ${message.notification!.title}');
           debugPrint(
-              'Message notification title: ${message.notification!.android}');
+              'Message notification android: ${message.notification!.android}');
+          debugPrint(
+              'Message notification apple: ${message.notification!.apple!.subtitle}');
           debugPrint('Message ttl: ${message.ttl}');
+          debugPrint('Message ttl: ${message.notification!.bodyLocKey}');
           if (message.notification != null) {
             debugPrint(
                 'Message also contained a notification: ${message.notification}');

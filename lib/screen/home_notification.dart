@@ -2,6 +2,8 @@ import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:get/get.dart';
+import 'package:push_notifications/controller/home_controller.dart';
 import 'package:push_notifications/helper/notification_helper.dart';
 
 import '../api_firebase/firebase_api.dart';
@@ -43,6 +45,8 @@ class _HomePageState extends State<HomePage> {
     super.initState();
   }
 
+  final controller = Get.put(HomeController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,6 +57,10 @@ class _HomePageState extends State<HomePage> {
       body: Center(
         child: Column(
           children: [
+            ElevatedButton(
+              onPressed: () {},
+              child: const Text("FCM to device"),
+            ),
             ElevatedButton(
               onPressed: () {
                 FirebaseAPI().initNotifications();
@@ -68,9 +76,14 @@ class _HomePageState extends State<HomePage> {
                 NotificationDetails platformChannelSpecifics =
                     NotificationDetails(
                         android: androidPlatformChannelSpecifics);
-                flutterLocalNotificationsPlugin.show(0, 'CCF HR App',
-                    'Flutter Developer', platformChannelSpecifics,
-                    payload: 'item x');
+
+                flutterLocalNotificationsPlugin.show(
+                  2,
+                  'CCF HR App',
+                  'Flutter Developer',
+                  platformChannelSpecifics,
+                  payload: 'item x',
+                );
               },
               child: const Text("Notification"),
             ),
